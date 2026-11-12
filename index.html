@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="weather-app">
+
+        <form id="search-form">
+            <label for="city">Ville</label>
+            <div class="search-container">
+                <input type="text" id="city" placeholder="Rechercher une ville">
+                <button type="submit">🔍</button>
+            </div>
+        </form>
+<p id="loading">Chargement...</p>
+<p id="error"></p>
+        <section class="current-weather">
+            <div id="weather-icon">☀️</div>
+            <h1 id="temperature">22°C</h1>
+            <h2 id="city-name">Nador</h2>
+            <p id="description">Ciel dégagé</p>
+            <p id="date">Lundi 09 novembre 2026</p>
+        </section>
+            
+        <section class="weather-details">
+            <div class="detail-card">
+                <span>💧</span>
+                <p id="humidity">53%</p>
+                <p>Humidité</p>
+            </div>
+            <div class="detail-card">
+                <span>🌬️</span>
+                <p id="wind">5,66 km/h</p>
+                <p>Vent</p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h2>Prévisions sur 5 jours</h2>
+            <div id="forecast-list">
+                <div class="forecast-card">
+                    <h3>Mardi</h3>
+                    <span>☀️</span>
+                    <p>23° / 15°</p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Mercredi</h3>
+                    <span>☁️</span>
+                    <p>21° / 14°</p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Jeudi</h3>
+                    <span>☀️</span>
+                    <p>24° / 16°</p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Vendredi</h3>
+                    <span>🌧️</span>
+                    <p>20° / 13°</p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Samedi</h3>
+                    <span>⛅</span>
+                    <p>22° / 14°</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

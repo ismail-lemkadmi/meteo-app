@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222326;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.weather-app {
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(135deg, #35dec0, #62619b);
+}
+
+
+#search-form {
+    margin-bottom: 30px;
+}
+
+#search-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+#loading,
+#error {
+    display: none;
+    margin-bottom: 15px;
+}
+
+
+.current-weather {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#weather-icon {
+    font-size: 80px;
+}
+
+#temperature {
+    font-size: 70px;
+    margin: 10px 0;
+}
+
+#city-name {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#description {
+    margin-bottom: 10px;
+}
+
+
+.weather-details {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.detail-card {
+    flex: 1;
+    background-color: #ffffff30;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.detail-card span {
+    font-size: 30px;
+}
+
+.detail-card p {
+    margin-top: 10px;
+}
+
+
+.forecast h2 {
+    margin-bottom: 20px;
+}
+
+#forecast-list {
+    display: flex;
+    gap: 10px;
+}
+
+.forecast-card {
+    flex: 1;
+    background-color: #ffffff30;
+    padding: 15px 8px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.forecast-card h3 {
+    font-size: 14px;
+}
+
+.forecast-card span {
+    display: block;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.forecast-card p {
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+    .weather-app {
+        padding: 20px;
+    }
+
+    #temperature {
+        font-size: 55px;
+    }
+
+    #city-name {
+        font-size: 28px;
+    }
+
+    #forecast-list {
+        flex-direction: column;
+    }
+
+    .forecast-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .forecast-card span {
+        margin: 0;
+    }
+}
